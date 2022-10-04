@@ -1,0 +1,14 @@
+H:\I1P622_Tarnus\I1P622_Tarnus\bin\Debug\netcoreapp3.1\I1P622_Tarnus.exe
+H:\I1P622_Tarnus\I1P622_Tarnus\bin\Debug\netcoreapp3.1\I1P622_Tarnus.deps.json
+H:\I1P622_Tarnus\I1P622_Tarnus\bin\Debug\netcoreapp3.1\I1P622_Tarnus.runtimeconfig.json
+H:\I1P622_Tarnus\I1P622_Tarnus\bin\Debug\netcoreapp3.1\I1P622_Tarnus.runtimeconfig.dev.json
+H:\I1P622_Tarnus\I1P622_Tarnus\bin\Debug\netcoreapp3.1\I1P622_Tarnus.dll
+H:\I1P622_Tarnus\I1P622_Tarnus\bin\Debug\netcoreapp3.1\I1P622_Tarnus.pdb
+H:\I1P622_Tarnus\I1P622_Tarnus\obj\Debug\netcoreapp3.1\I1P622_Tarnus.csproj.AssemblyReference.cache
+H:\I1P622_Tarnus\I1P622_Tarnus\obj\Debug\netcoreapp3.1\I1P622_Tarnus.GeneratedMSBuildEditorConfig.editorconfig
+H:\I1P622_Tarnus\I1P622_Tarnus\obj\Debug\netcoreapp3.1\I1P622_Tarnus.AssemblyInfoInputs.cache
+H:\I1P622_Tarnus\I1P622_Tarnus\obj\Debug\netcoreapp3.1\I1P622_Tarnus.AssemblyInfo.cs
+H:\I1P622_Tarnus\I1P622_Tarnus\obj\Debug\netcoreapp3.1\I1P622_Tarnus.csproj.CoreCompileInputs.cache
+H:\I1P622_Tarnus\I1P622_Tarnus\obj\Debug\netcoreapp3.1\I1P622_Tarnus.dll
+H:\I1P622_Tarnus\I1P622_Tarnus\obj\Debug\netcoreapp3.1\I1P622_Tarnus.pdb
+H:\I1P622_Tarnus\I1P622_Tarnus\obj\Debug\netcoreapp3.1\I1P622_Tarnus.genruntimeconfig.cache
