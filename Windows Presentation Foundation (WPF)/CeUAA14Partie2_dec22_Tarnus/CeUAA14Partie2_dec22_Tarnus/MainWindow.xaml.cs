@@ -60,7 +60,6 @@ namespace CeUAA14Partie2_dec22_Tarnus
                         {
                             buttons[i, j].Background = Brushes.Red;
                         }
-
                     }
                     else
                     {
@@ -106,7 +105,7 @@ namespace CeUAA14Partie2_dec22_Tarnus
             int totalJoueur = 0;
             int[] positionPionJoueur = new int[2];
 
-            TourJoueur(totalJoueur, positionPionJoueur, de, buttons);
+            //TourJoueur(totalJoueur, positionPionJoueur, de, buttons);
         }
         public void TourJoueur(int totalJoueur, int[] positionPionJoueur, int de, Button[,] buttons)
         { 
