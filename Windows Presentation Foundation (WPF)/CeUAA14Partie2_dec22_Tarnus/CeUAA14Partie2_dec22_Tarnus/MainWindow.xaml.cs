@@ -20,11 +20,14 @@ namespace CeUAA14Partie2_dec22_Tarnus
     /// </summary>
     public partial class MainWindow : Window
     {
+        int totalJoueur = 0;
+        int ancienneValeur;
+        int[] positionPionJoueur = new int[2];
+        string symboleJoueur = "X";
+        Button[,] buttons = new Button[10, 10];
         public MainWindow()
         {
-            Grid plate = new Grid();
-            Button[,] buttons = new Button[10, 10];
-
+            Grid plate = new Grid();         
             InitializeComponent();
             SetUpGame(buttons, plate);
 
@@ -102,16 +105,16 @@ namespace CeUAA14Partie2_dec22_Tarnus
             string numeroDe = de.ToString();
             face.Text = numeroDe;
 
-            int totalJoueur = 0;
-            int[] positionPionJoueur = new int[2];
-
-            //TourJoueur(totalJoueur, positionPionJoueur, de, buttons);
+            TourJoueur(symboleJoueur, ref totalJoueur, ref positionPionJoueur, de, ref ancienneValeur);
         }
-        public void TourJoueur(int totalJoueur, int[] positionPionJoueur, int de, Button[,] buttons)
-        { 
+        public void TourJoueur(string symboleJoueur, ref int totalJoueur, ref int[] positionPionJoueur, int de, ref int ancienneValeur)
+        {
+            ancienneValeur = totalJoueur +
+                1;
             totalJoueur += de;
-
             int reste = totalJoueur - 10 * (positionPionJoueur[0] + 1);
+            buttons[positionPionJoueur[0], positionPionJoueur[1]].Content = ancienneValeur;
+            buttons[positionPionJoueur[0], positionPionJoueur[1]].Foreground = Brushes.Black;
 
             if(reste < 0)
             {
@@ -133,32 +136,13 @@ namespace CeUAA14Partie2_dec22_Tarnus
 
             if(positionPionJoueur[0] <= 9)
             {
-                    for (int i = 0; i < buttons.GetLength(0); i++)
-                    {
-                        for (int j = 0; j < buttons.GetLength(1); j++)
-                        {
-                            if (buttons[i, j].Content == "X")
-                            {
-                                buttons[i, j].Content = i + 1 + j + 1;
-                            }
-                        }
-                    }
-                buttons[positionPionJoueur[0], positionPionJoueur[1]].Content = "X";
+                buttons[positionPionJoueur[0], positionPionJoueur[1]].Content = symboleJoueur;
+                buttons[positionPionJoueur[0], positionPionJoueur[1]].Foreground = Brushes.Gold;
             }
             else
-            {
-
-                for (int i = 0; i < buttons.GetLength(0); i++)
-                {
-                    for (int j = 0; j < buttons.GetLength(1); j++)
-                    {
-                        if (buttons[i, j].Content == "X")
-                        {
-                            buttons[i, j].Content = i + 1 + j + 1;
-                        }
-                    }
-                }
-                buttons[10,10].Content = "X";
+            { 
+                buttons[9,0].Content = symboleJoueur;
+                buttons[9, 0].Foreground = Brushes.Gold;
                 play.IsEnabled = false;
                 victoire.Text = "Vous avez gagné!";
             }
